@@ -1,0 +1,72 @@
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ pwd;
+/d/QA/TERMINAL/test_dir
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ mkdir f_1 f_2 f_3;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ cd f_1;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ mkdir f_4 f_5 f_6;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ > a_1.txt > a_2.txt > a_3.txt > b_1.json > b_2.json;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ vim a_1.txt;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ cd ..;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ cd f_1;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ mv a_1.txt f_4;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ cp b_1.json b_2.json f_5;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ find -name b_2.json;
+./b_2.json
+./f_5/b_2.json
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$  grep ДЛЯ ./*;
+./a_2.txt:ДЛЯ ЧЕГО МЫ ПОЛЬЗУЕМСЯ GREP-ОМ?
+grep: ./f_4: Is a directory
+grep: ./f_5: Is a directory
+grep: ./f_6: Is a directory
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$  grep ДЛЯ a_2.txt;
+ДЛЯ ЧЕГО МЫ ПОЛЬЗУЕМСЯ GREP-ОМ?
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ head -n3 a_2.txt;
+ДЛЯ ЧЕГО МЫ ПОЛЬЗУЕМСЯ GREP-ОМ?
+
+Grep это утилита командной строки Linux, который даёт пользователям возможность вести поиск строки. 
+С его помощью можно даже искать конкретные слова в файле. Также можно передать вывод любой команды 
+в grep, что сильно упрощает работу во время поиска и траблшутинга.
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ tail -n2 a_2.txt;
+
+Возьмём команду ls. Сама по себе она выводит список всех файлов и папок. 
+Но если нужно найти конкретную папку или один файл среди сотни других, то мы можем передать вывод команды 
+ls в grep через вертикальную черту (|), а уже grep-у параметром передать нужное слово.
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ less long.txt;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$ date;
+Sat Mar 12 16:24:49     2022
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir/f_1
+$
