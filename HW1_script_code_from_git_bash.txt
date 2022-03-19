@@ -1,0 +1,17 @@
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL
+$ chmod +x ./script.txt;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL
+$ ./script.txt;
+total 4
+drwxr-xr-x 1 artur 197609 0 Mar 19 18:41 .
+drwxr-xr-x 1 artur 197609 0 Mar 19 18:41 ..
+-rw-r--r-- 1 artur 197609 0 Mar 19 18:41 a_3.txt
+-rw-r--r-- 1 artur 197609 0 Mar 19 18:41 b_1.json
+-rw-r--r-- 1 artur 197609 0 Mar 19 18:41 b_2.json
+drwxr-xr-x 1 artur 197609 0 Mar 19 18:41 f_4
+drwxr-xr-x 1 artur 197609 0 Mar 19 18:41 f_5
+drwxr-xr-x 1 artur 197609 0 Mar 19 18:41 f_6
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL
+$
