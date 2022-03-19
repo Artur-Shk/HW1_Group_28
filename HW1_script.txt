@@ -1,0 +1,10 @@
+#!/bin/bash
+cd script_test;
+mkdir f_1 f_2 f_3;
+cd f_1;
+> a_1.txt > a_2.txt > a_3.txt > b_1.json > b_2.json;
+mkdir f_4 f_5 f_6;
+mv a_1.txt f_4;
+mv a_2.txt f_4;
+ls -la
+
