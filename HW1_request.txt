@@ -1,0 +1,21 @@
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ pwd
+/d/QA/TERMINAL/test_dir
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ > HM*.txt;
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ ls -la;
+total 4
+drwxr-xr-x 1 artur 197609 0 Mar 19 15:35  ./
+drwxr-xr-x 1 artur 197609 0 Mar  8 16:09  ../
+-rw-r--r-- 1 artur 197609 0 Mar 19 15:35 'HM*.txt'
+
+artur@DESKTOP-FEV6CC6 MINGW64 /d/QA/TERMINAL/test_dir
+$ curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000";
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   185  100   185    0     0   1799      0 --:--:-- --:--:-- --:--:--  1813{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+
+
